@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Today</title>
+  <link rel="stylesheet" href="frontend/style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+  <div class="header">
+   <h1> <i class="fa-regular fa-cloud"></i>Weather App</h1>
+  </div>
+  <hr>
+ 
+  <div class="container">
+    <div class="thongtin"> 
+       <input type="text" id="cityInput" placeholder="Enter City Name"> 
+       <button id="searchbutton" onclick="getByCity()" >Search</button>
+      </div>
+      <div class="information">
+        <div class="cityandtemp">
+          <h1 id="cityName"></h1>
+          <h1 id="temp"></h1>
+        </div>
+        <div class="otherinformation">
+          <div class="humidity"><i class="fa-solid fa-water"></i> <h1 id="humid"></h1></div>
+          <div class="wind"><i class="fa-solid fa-wind"></i> <h1 id="wind"></h1></div>
+          <div class="feelslike"><i class="fa-solid fa-temperature-quarter"></i> <h1 id="feelsliketemp"></h1></div>
+        </div>
+      </div>
+  </div>
+
+  <div class="footer"><i>Deploy by @GiaBao_24</i></div>
+
+  <script src="api.js"></script>
+</body>
+</html>

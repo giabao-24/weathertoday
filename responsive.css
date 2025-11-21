@@ -1,0 +1,170 @@
+/* CSS mặc định cho tất cả điện thoại (bao gồm iPhone X) */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  width: 100%; /* Hoặc max-width: 100% */
+  color: black;
+  background-image: url('https://images.unsplash.com/photo-1561486576-189f808ca324?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+.header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+.header h1 {
+  margin-left: 5px;
+  background: linear-gradient(90deg, #ff0080, #ff8c00, #40e0d0, #0080ff);
+}
+.container {
+  width: 100%;
+  height: 400px;
+}
+.thongtin { 
+  width: 100%;
+  height: 50px;
+}
+.thongtin input {
+  width: 70%;
+  height: 25px;
+  margin-top: 10px;
+  margin-left: 5%;
+  border-radius: 5px 5px 5px 5px;
+  border-color: #0080ff;
+}
+.thongtin button {
+ width: 20%;
+ height: 29px;
+ background-color: #0080ff;
+ border: none;
+ border-radius: 2px 2px 2px 2px;
+}
+/*information class and atributes inside it*/
+.information {
+  width: 100%;
+  height: 350px;
+}
+
+.cityandtemp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cityandtemp h1 {
+  color: white;
+  padding: 20px;
+}
+
+.otherinformation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+.humidity, .wind, .feelslike {
+  flex: 1;
+  padding: 5px;
+  height: 100px;
+  background-color: rgb(199, 192, 192);
+  text-align: center;
+}
+.footer {
+  width: 100%;
+  height: 70px;
+  color: white;
+}
+
+
+/* CSS cho máy tính bảng (từ 768px trở lên) */
+@media (min-width: 768px) {
+  body {
+     background-color: rgba(34, 30, 30, 0.304);
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
+
+/* CSS cho máy tính (từ 992px trở lên) */
+@media (min-width: 992px) {
+  body {
+     background-color: rgba(0, 0, 0, 0.979);
+     background-image: url('https://images.unsplash.com/photo-1561484930-998b6a7b22e8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+  }
+  .header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+.header h1 {
+  margin-left: 30px;
+  font-size: 40px;
+  background: linear-gradient(90deg, #ff0080, #ff8c00, #40e0d0, #0080ff);
+}
+.container {
+  width: 100%;
+  height: 450px;
+}
+.thongtin { 
+  width: 100%;
+  height: 100px;
+}
+.thongtin input {
+  width: 70%;
+  height: 35px;
+  margin-top: 10px;
+  margin-left: 5%;
+  border-radius: 5px 5px 5px 5px;
+  border-color: #0080ff;
+}
+.thongtin button {
+ width: 20%;
+ height: 35px;
+ background-color: #0080ff;
+ border: none;
+ border-radius: 2px 2px 2px 2px;
+}
+/*information class and atributes inside it*/
+.information {
+  width: 100%;
+  height: 350px;
+}
+
+.cityandtemp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cityandtemp h1 {
+  color: white;
+  padding: 20px;
+}
+
+.otherinformation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+.humidity, .wind, .feelslike {
+  flex: 1;
+  padding: 5px;
+  height: 100px;
+  background-color: rgb(199, 192, 192);
+  text-align: center;
+}
+.footer {
+  width: 100%;
+  height: 70px;
+}
+}
