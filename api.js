@@ -1,5 +1,5 @@
 async function basicInformation() {
-    fetch('https://weathertoday-o2gp.onrender.com/basic') 
+    fetch('https://weathertoday-1.onrender.com/basic') 
     .then(response => {
       if (!response.ok) {
         throw new Error("Lỗi kết nối server");
@@ -23,7 +23,7 @@ async function getByCity() {
       return;
   }
 
-  fetch(`https://weathertoday-o2gp.onrender.com/search?city=${cityInput}`)
+  fetch(`https://weathertoday-1.onrender.com/search?city=${cityInput}`)
   .then(response => {
     if (!response.ok) {
       alert("City not found or Server Error");
